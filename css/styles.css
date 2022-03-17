@@ -14,7 +14,10 @@ body{
 }
 /* без точек */
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
+
 }
 /* без подчеркиваний */
 a {
@@ -76,6 +79,10 @@ a {
     color: var(--title-text-color);
     background-color: #F5F4FA;
     cursor: pointer;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid transparent;
 }
  
 .hero-btn:hover,
@@ -91,43 +98,46 @@ a {
     font-size: 16px;
     line-height: 1.88;
     display: flex;
-    text-align: center;
     letter-spacing: 0.06em;
     font-family: inherit;
+    padding: 10px 32px;
+    
 }
 
 .portfolio-btn {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    text-align: center;
     letter-spacing: 0.03em;
     font-family: inherit; 
+    padding: 6px 22px;
+    min-width: 73px;
 }
 
-/* интерактивные элементы футер */
-.footer-link-map {
-    color: var(--primary-white-color);
-}
-.footer-link {
-    color: rgba(255, 255, 255, 0.6);
+
+/*Шапка профиля */
+
+.header {
+    
 }
 
-.footer-link-map:hover,
-.footer-link-map:focus,
-.footer-link:hover,
-.footer-link:focus {
-    color: var(--accent-color);
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    outline: 2px solid tomato;
+    
 }
-.footer-link-map,
-.footer-link {
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
+
+.container.hero {
+    padding-bottom: 200px;
 }
 
 /* Герой */
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-top: 200px;
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
@@ -135,14 +145,19 @@ letter-spacing: 0.03em;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    
 }
 
 .hero {
     background-color: #2F303A;
+    margin-top: 0;
+    margin-bottom: 94px;
 }
 
 /* Особенности */
 .hang-subtitle {
+    margin-top: 0;
+    margin-bottom: 10px;
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -152,6 +167,8 @@ letter-spacing: 0.03em;
 }
 
 .hang-text {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -187,10 +204,35 @@ letter-spacing: 0.03em;
 /* Footer */
 .footer {
     background-color: var(--background-second);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer-adress {
     font-style: normal;
+    padding-top: 20px;
 }
+
+/* интерактивные элементы футер */
+.footer-link-map {
+    color: var(--primary-white-color);
+}
+.footer-link {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link-map:hover,
+.footer-link-map:focus,
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--accent-color);
+}
+.footer-link-map,
+.footer-link {
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+}
+
 
 /* Портфолио */
 /* Наши проекты */
