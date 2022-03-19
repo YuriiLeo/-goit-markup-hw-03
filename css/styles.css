@@ -4,12 +4,15 @@
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --primary-white-color: #FFFFFF;
+    --background-first: #FFFFFF;
     --background-second: #2F303A;
+    --background-third: #F5F4FA;
+    
     }
     
 body{
     font-family: Roboto, sans-serif;
-    background-color: white;
+    background-color: var(--background-first);
     color: var(--primare-text-color);
 }
 /* без точек */
@@ -26,8 +29,12 @@ a {
 
 /* Единый клас section */
 .section {
-    padding-top: 94px;
     padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.section.hang {
+    padding-bottom: 0;
 }
 
 /* Интерактивные елементы лого */
@@ -129,9 +136,8 @@ a {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
-    padding-left: 10px;
-    padding-right: 10px;
-    outline: 2px solid tomato;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /*Шапка профиля */
@@ -198,10 +204,10 @@ margin-left: 50px;
 .hero {
     background-color: #2F303A;
     margin-top: 0;
-    margin-bottom: 94px;
 }
 
 /* Особенности */
+
 
 .hang-list {
     display: flex;
@@ -237,6 +243,7 @@ margin-left: 50px;
 
 /* Чем мы занимаемся - Наша команда*/
 
+
 .about-list {
     display: flex;
     justify-content: space-between;
@@ -264,6 +271,10 @@ margin-left: 50px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+}
+
+.team {
+    background-color: var(--background-third);
 }
 
 .team-list {
@@ -333,7 +344,7 @@ letter-spacing: 0.03em;
 /* Кнопки проектов */
 
 .portfolio {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 .portfolio-list {
@@ -351,10 +362,13 @@ letter-spacing: 0.03em;
 
 /* Наши проекты */
 
+.projects.section {
+    padding-top: 0;
+}
+
 .projects-list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 94px;
 }
 
 .projects-item {
@@ -371,6 +385,10 @@ letter-spacing: 0.03em;
     margin-bottom: 0;
 }
 
+.img {
+    display: block;
+}
+
 .projects-item > a {
     
 }
@@ -384,6 +402,7 @@ letter-spacing: 0.03em;
 .projects-title {
     padding-left: 24px;
     margin-bottom: 4px;
+    margin-top: 0;
 
     color: var(--title-text-color);
     font-weight: 700;
