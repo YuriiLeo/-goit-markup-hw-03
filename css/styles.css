@@ -40,6 +40,8 @@ a {
 /* Интерактивные елементы лого */
 .logo,
 .logo-footer {
+    display: block;
+
     color: var(--title-text-color);
     font-family: 'Raleway';
     font-weight: 700;
@@ -47,10 +49,13 @@ a {
     line-height: 1.2;
     letter-spacing: 0.03em;
 }
+.logo {
+    padding-top: 32px;
+    padding-bottom: 32px; 
+}
 
 .logo-footer {
     color: var(--primary-white-color);
-    display: block;
     margin-bottom: 20px;
 }
 
