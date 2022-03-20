@@ -50,6 +50,8 @@ a {
 
 .logo-footer {
     color: var(--primary-white-color);
+    display: block;
+    margin-bottom: 20px;
 }
 
 .logo-first {
@@ -177,20 +179,22 @@ a {
     margin-left: auto;
 }
 
+.contact-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px; 
+}
+
 .header-contacts-item +.header-contacts-item {
 margin-left: 50px;
 }
 
 /* Герой */
 
-.container.hero {
-    padding-bottom: 200px;
-}
 
 .hero-title {
     margin-top: 0;
     margin-bottom: 30px;
-    padding-top: 200px;
     color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
@@ -202,6 +206,9 @@ margin-left: 50px;
 }
 
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
     background-color: #2F303A;
     margin-top: 0;
 }
@@ -247,7 +254,6 @@ margin-left: 50px;
 .about-list {
     display: flex;
     justify-content: space-between;
-    outline: 1px solid black;
 }
 
 .about-item {
@@ -260,11 +266,14 @@ margin-left: 50px;
 }
 
 .about-title {
-    margin-bottom: 50px;
+    
 }
 
 .about-title,
 .team-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -290,7 +299,21 @@ margin-left: 50px;
     margin-right: 0;
 }
 
+.team-container-title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team-after-title,
+.team-text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
 .team-after-title {
+    margin-bottom: 10px;
+
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -314,7 +337,6 @@ margin-left: 50px;
 }
 .footer-adress {
     font-style: normal;
-    padding-top: 20px;
 }
 
 /* интерактивные элементы футер */
@@ -338,6 +360,9 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 }
 
+.footer-item:not(:last-child) {
+    margin-bottom: 9px;
+}
 
 /* Портфолио */
 
@@ -356,7 +381,8 @@ letter-spacing: 0.03em;
     margin-right: 8px;
 }
 
-.projects-item:last-child {
+
+.portfolio-item:last-child {
     margin-right: 0;
 }
 
@@ -389,18 +415,17 @@ letter-spacing: 0.03em;
     display: block;
 }
 
-.projects-item > a {
-    
-}
+
 
 .projects-content {
+    padding: 20px 24px;
+
     border-bottom: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
 }
 
 .projects-title {
-    padding-left: 24px;
     margin-bottom: 4px;
     margin-top: 0;
 
@@ -412,8 +437,8 @@ letter-spacing: 0.03em;
 }
 
 .projects-text {
-    padding-left: 24px;
     margin-top: 0;
+    margin-bottom: 0;
 
     color: var(--primare-text-color);
     font-size: 16px;
