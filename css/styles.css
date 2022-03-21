@@ -373,9 +373,6 @@ letter-spacing: 0.03em;
 
 /* Кнопки проектов */
 
-.portfolio {
-    padding-bottom: 50px;
-}
 
 .portfolio-list {
     display: flex;
